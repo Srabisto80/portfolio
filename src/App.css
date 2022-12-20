@@ -2,37 +2,82 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#myNavBar {
+  background-color: darkblue;
+  padding: 1%;
+  display: inline-flex;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#myNavBar>li {
+  margin: auto;
+  list-style-type: none;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Segoe Print";
 }
+
+#myNavBar>li>a:hover {
+  color: darkblue;
+  background-color: lightblue;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+#myNavBar>li>a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px lightblue;
+}
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: lightblue;
+  /* text-shadow: 1px 1px 1px white; */
 }
 
-.App-link {
-  color: #61dafb;
+/* .App-link {
+  color: #494fc1;
+} */
+
+body {
+  background-color: lightblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#introLine {
+  color: darkblue;
+  font-size: 50px;
+  font-family: 'Segoe Print';
+  transform: rotate(-15deg);
+  margin: 20% auto 25% auto;
+  text-shadow: 1px 1px 1px white;
+  font-weight: 900;
+  width: 90%;
+}
+
+#backSquare {
+  height: 50vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 139, 0.2);
+  border: 1px solid white;
+  border-radius: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+#frontSquare {
+  height: 20vh;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid darkblue;
+  border-radius: 30px;
+  transform: rotate(-35deg);
+  position: absolute;
+  top: 45vh;
+  right: 5vw;
 }
