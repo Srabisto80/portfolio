@@ -9,6 +9,9 @@
   width: 80%;
   border: 1px solid white;
   border-radius: 10px;
+  position: fixed;
+  top: 2%;
+  left: 10%;
 }
 
 #myNavBar>li {
@@ -22,8 +25,8 @@
 #myNavBar>li>a:hover {
   color: darkblue;
   background-color: lightblue;
-  padding-left: 1%;
-  padding-right: 1%;
+  /* padding-left: 1%; */
+  /* padding-right: 1%; */
   border-radius: 10px;
   cursor: grab;
 }
@@ -80,4 +83,21 @@ body {
   position: absolute;
   top: 45vh;
   right: 5vw;
+}
+
+.titleOfPage {
+  margin-top: 10%;
+  color: darkblue;
+  text-shadow: 1px 1px 1px white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hardSkillLogo {
+  margin: 10% 5% 1% 5%;
+}
+
+#hardSkills {
+  width: 40%;
+  
 }
