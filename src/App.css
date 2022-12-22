@@ -1,3 +1,9 @@
+
+* {
+  font-family: 'Segoe Print';
+}
+
+
 .App {
   text-align: center;
 }
@@ -6,12 +12,14 @@
   background-color: darkblue;
   padding: 1%;
   display: inline-flex;
-  width: 80%;
-  border: 1px solid white;
+  width: 100%;
+  border-bottom: 1px solid white;
+
   border-radius: 10px;
   position: fixed;
-  top: 2%;
-  left: 10%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 #myNavBar>li {
@@ -48,24 +56,50 @@
 } */
 
 body {
-  background-color: lightblue;
+  background-color: darkblue;
+  /* background-color: #add8e6; */
+}
+
+
+
+
+
+/* Home Page */
+
+/* #homePage {
+  height: 100vh;
+} */
+
+.homeImages {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4%;
+}
+
+#connects {
+  margin-left: 70%;
+  margin-top: -10%;
 }
 
 #introLine {
-  color: darkblue;
+  color: lightblue;
   font-size: 50px;
   font-family: 'Segoe Print';
-  transform: rotate(-15deg);
-  margin: 20% auto 25% auto;
+  transform: rotate(-10deg);
+  margin: 25% auto 25% auto;
   text-shadow: 1px 1px 1px white;
   font-weight: 900;
   width: 90%;
+  z-index: 1;
 }
 
 #backSquare {
   height: 50vh;
   width: 50vw;
-  background-color: rgba(0, 0, 139, 0.2);
+  background-color: rgba(145, 140, 242, 0.2);
+  /* background-color: rgba(0, 0, 139, 0.2); */
   border: 1px solid white;
   border-radius: 30px;
   transform: rotate(45deg);
@@ -87,17 +121,233 @@ body {
 
 .titleOfPage {
   margin-top: 10%;
-  color: darkblue;
-  text-shadow: 1px 1px 1px white;
+  color: lightblue;
+  /* text-shadow: 1px 1px 1px white; */
   text-align: center;
+  font-size: 34px;
   text-decoration: underline;
 }
 
-.hardSkillLogo {
-  margin: 10% 5% 1% 5%;
+
+
+
+
+
+
+/* About Page */
+
+#myIntro {
+  float: left;
 }
 
-#hardSkills {
+#firstLine {
   width: 40%;
-  
+  float: left;
+  margin-left: 10%;
+  background-color: rgba(232, 242, 245, 0.2);
+  color: lightblue;
+  font-size: 18px;
+  padding: 1%;
 }
+
+#profilePic {
+  height: 150px;
+  margin: 2% 10%;
+  border-radius: 50%;
+  border: 2px solid lightblue;
+}
+
+#myStory {
+  width: 80%;
+  color: lightblue;
+  margin: auto;
+}
+
+#myStory>p {
+  background-color: rgba(232, 242, 245, 0.2);
+  padding: 1%;
+
+}
+
+#kidsInBack {
+  float: left;
+  margin-left: 14%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+#myKids {
+  height: 150px;
+  border-radius: 10%;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#lastPara {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skills Page */
+
+/* #SkillListPage {
+  height: calc(100vh - 5%);
+  margin-top: 5%;
+} */
+
+#hardSkills {
+  margin: auto;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 5%;
+  /* margin-left: 5%; */
+  background-color: rgba(50, 50, 239, 0.581);
+  display: flexbox;
+  flex-flow: wrap;
+  ;
+}
+
+.hardSkillLogo {
+  margin: 2% 5%;
+  width: 200px;
+  border-radius: 5%;
+}
+
+#softSkillsTable {
+  table-layout: auto;
+  width: 80%;
+  margin: auto;
+  height: 55vh;
+  font-size: 25px;
+  background-color: rgba(42, 42, 223, 0.456);
+  color: lightblue;
+  border-radius: 1%;
+  display: block;
+}
+
+#softSkillsTable>tr>td {
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+#skillsTab {
+  width: 40%;
+  display: inline-flex;
+  border: 1px solid white;
+  border-radius: 5%;
+
+  /* color: darkblue; */
+  background-color: darkblue;
+  color: lightblue;
+  margin: 2% 10% 0% 10%;
+}
+
+#skillsTab>p {
+  font-size: 40px;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid white; */
+  border-radius: 5%;
+  /* color: darkblue; */
+  text-shadow: 1px 1px 1px white;
+  background-color: darkblue;
+  color: lightblue;
+  border-radius: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page */
+
+
+#contactForm {
+  width: 80%;
+  margin: auto;
+  background-color: darkblue;
+  border: 5px ridge white;
+  border-radius: 5%;
+  color: lightblue;
+}
+
+
+.firstColumn, .secondColumn { 
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  padding: 2%;
+  /* border: 1px solid darkblue; */
+}
+
+.firstColumn>input {
+  width: 90%;
+}
+
+.secondColumn>input {
+  width: 90%;
+}
+
+.messagebox {
+  clear: both;
+  width: 80%;
+  display: block;
+  /* border: 1px solid white; */
+  margin: auto;
+  text-align: center;
+}
+
+/* .messagebox>label {
+  margin-left: auto;
+} */
+
+#message {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+#submitButton {
+  margin: 2% auto;
+  display: block;
+  width: 40%;
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgb(11, 240, 11);
+  border: 1px solid white;
+  border-radius: 5%;
+  color: darkblue;
+}
+
+#submitButton:hover {
+  color: rgb(11, 240, 11);
+  background-color: darkblue;
+
+}
+
+
